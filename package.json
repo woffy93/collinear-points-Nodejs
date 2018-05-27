@@ -1,0 +1,25 @@
+{
+  "name": "collinear",
+  "version": "1.0.0",
+  "description": "Possible solution to a given problem about collinear points",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woffy93/collinear-points-Nodejs.git"
+  },
+  "keywords": [
+    "node",
+    "rest",
+    "collinear",
+    "json"
+  ],
+  "author": "Francesco Wofford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woffy93/collinear-points-Nodejs/issues"
+  },
+  "homepage": "https://github.com/woffy93/collinear-points-Nodejs#readme"
+}
