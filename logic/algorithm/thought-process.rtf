@@ -1,0 +1,19 @@
+Algorithm thought process:
+Create a data structure in order to define a point and a line.
+Point defined by its coordinates.
+Line defined by:
+•	Slope (dy/dx between two of its points)
+•	known points from the input which I would have liked to be stored in a Set.
+Unfortunately Javascript Set doesn’t allow me to define a comparator but works in a Object1===Object2 fashion so I have used arrays instead and implemented a function to get rid of duplicates
+Calculate all the combinations of 2 points in the plane (all possible lines) and store them in a lines array.
+ Using two indexes iterate over the lines array:
+for each line check if the two lines have the same slopes and :
+fixed a point A in the first line,
+given B a point in the first line
+ and C a point in the second line (A,B,C are form input points),
+check if the slope between A and B is the same as the one from A and C.
+If so merge the Points array with the new Points coming from the second line, discard the second line and update the indexes (I’m trying an in-place approach in this part for fun).
+In the end I’ll get an array with all the possible lines in the plane formed by the known points passed in input at the beginning.
+Discard all lines with two points.
+
+For the second part (getting the line segments) I order the known points in each line and count using two indexes in order to get the segments
