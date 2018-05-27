@@ -37,9 +37,9 @@ let run = function () {
 
 
         let i = lines.length;
-        while (i--) {
+        while (i-->0) {
             let j = lines.length;
-            while (j--) {
+            while (j-->0) {
                 if (i !== j) {
                     let line = lines[i];
                     let otherLine = lines[j];
@@ -56,6 +56,7 @@ let run = function () {
                         console.log("I:"+i+"J:"+j);
                     }
                 }
+                if (j==0) break;
             }
         }
 
@@ -84,6 +85,7 @@ let run = function () {
 
 function getSegments(n) {
     let l = run();
+    console.log(JSON.stringify(l));
     let segments = [];
     l.forEach(function (line) {
         let points = line.getPoints();
